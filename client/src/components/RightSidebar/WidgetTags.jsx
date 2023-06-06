@@ -1,7 +1,7 @@
 import React from "react";
 
 const WidgetTags = () => {
-    const tags = [
+  const tags = [
     "c",
     "css",
     "express",
@@ -18,18 +18,17 @@ const WidgetTags = () => {
     "python",
     "reactjs",
   ];
-    return (
-        <div className="widget-tags">
-            <h3>Watched tags</h3>
-            <div className="widget-tags-div">
-                {
-                    tags.map((tag) => (
-                        <p key={tag}>{tag}</p>
-                    ))
-                }
-            </div>  
-        </div>
-    )
-}
 
-export default WidgetTags
+  return (
+    <div className="widget-tags">
+      <h4>Watched tags</h4>
+      <div className="widget-tags-div">
+        {tags.map((tag) => (
+          <p key={tag}>{tag}</p>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default WidgetTags;
